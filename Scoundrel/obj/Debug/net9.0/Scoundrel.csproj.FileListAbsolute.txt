@@ -1,0 +1,14 @@
+d:\projects\Scoundrel\Scoundrel\bin\Debug\net9.0\Scoundrel.exe
+d:\projects\Scoundrel\Scoundrel\bin\Debug\net9.0\Scoundrel.deps.json
+d:\projects\Scoundrel\Scoundrel\bin\Debug\net9.0\Scoundrel.runtimeconfig.json
+d:\projects\Scoundrel\Scoundrel\bin\Debug\net9.0\Scoundrel.dll
+d:\projects\Scoundrel\Scoundrel\bin\Debug\net9.0\Scoundrel.pdb
+d:\projects\Scoundrel\Scoundrel\obj\Debug\net9.0\Scoundrel.GeneratedMSBuildEditorConfig.editorconfig
+d:\projects\Scoundrel\Scoundrel\obj\Debug\net9.0\Scoundrel.AssemblyInfoInputs.cache
+d:\projects\Scoundrel\Scoundrel\obj\Debug\net9.0\Scoundrel.AssemblyInfo.cs
+d:\projects\Scoundrel\Scoundrel\obj\Debug\net9.0\Scoundrel.csproj.CoreCompileInputs.cache
+d:\projects\Scoundrel\Scoundrel\obj\Debug\net9.0\Scoundrel.dll
+d:\projects\Scoundrel\Scoundrel\obj\Debug\net9.0\refint\Scoundrel.dll
+d:\projects\Scoundrel\Scoundrel\obj\Debug\net9.0\Scoundrel.pdb
+d:\projects\Scoundrel\Scoundrel\obj\Debug\net9.0\Scoundrel.genruntimeconfig.cache
+d:\projects\Scoundrel\Scoundrel\obj\Debug\net9.0\ref\Scoundrel.dll
