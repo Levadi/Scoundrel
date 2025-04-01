@@ -42,6 +42,10 @@ public abstract class Card
     {
         suitName = suits[suit];
     }
+    protected void selfDestruct()
+    {
+        Room.removeCard(this);
+    }
 
     public abstract void playCard();
 }
@@ -59,9 +63,8 @@ public class Black : Card
     public override void playCard()
     {
         Console.WriteLine($"You fight the {faceName} of {suitName}.");
-        Hand.takeDamage(value);
-        Hand.weaponStack.Push(this);
-        Console.WriteLine($"{faceName} is now the highest value card you can use your weapon against.");
+        Hand.takeDamage(this);
+        selfDestruct();
     }
 }
 
@@ -70,7 +73,7 @@ public class Heart : Card
     public Heart(int value)
     {
         this.value = value;
-        this.suit = 2;
+        suit = 2;
         setName();
         setSuit();
     }
@@ -81,12 +84,14 @@ public class Heart : Card
         if (Hand.healed) 
         {
             Console.WriteLine("You have already healed in this room. The card will be discarded.");
+            selfDestruct();
             return;
         }
         Hand.healed = true;
         Hand.health += value;
         if (Hand.health > 20) Hand.health = 20;
         Console.WriteLine($"Healed to {Hand.health} health.");
+        selfDestruct();
     }
 }
 
@@ -95,7 +100,7 @@ public class Diamond : Card
     public Diamond(int value)
     {
         this.value = value;
-        this.suit = 3;
+        suit = 3;
         setName();
         setSuit();
     }
@@ -105,5 +110,6 @@ public class Diamond : Card
         Hand.equippedWeapon = this;
         Hand.weaponStack.Clear();
         Console.WriteLine($"Equipped {faceName} of {suitName}.");
+        selfDestruct();
     }
 }

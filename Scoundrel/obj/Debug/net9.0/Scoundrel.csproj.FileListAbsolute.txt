@@ -12,3 +12,4 @@ d:\projects\Scoundrel\Scoundrel\obj\Debug\net9.0\refint\Scoundrel.dll
 d:\projects\Scoundrel\Scoundrel\obj\Debug\net9.0\Scoundrel.pdb
 d:\projects\Scoundrel\Scoundrel\obj\Debug\net9.0\Scoundrel.genruntimeconfig.cache
 d:\projects\Scoundrel\Scoundrel\obj\Debug\net9.0\ref\Scoundrel.dll
+d:\projects\Scoundrel\Scoundrel\obj\Debug\net9.0\Scoundrel.sourcelink.json
