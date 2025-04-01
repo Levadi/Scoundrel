@@ -29,10 +29,18 @@ public static class Game
     {
         Console.WriteLine("Choose a card to play (1-4): ");
         string? input = Console.ReadLine();
-        int choice = int.Parse(input) - 1;
-        if (choice < 0 || choice >= Room.room.Count) {
+        if (string.IsNullOrWhiteSpace(input) || !int.TryParse(input, out int choice))
+        {
             Console.WriteLine("Invalid choice. Please choose a number between 1 and 4.");
             makeChoice();
+            return;
+        }
+        choice -= 1;
+        if (choice < 0 || choice >= Room.room.Count)
+        {
+            Console.WriteLine("Invalid choice. Please choose a number between 1 and 4.");
+            makeChoice();
+            return;
         }
         Card chosenCard = Room.room[choice];
         chosenCard.playCard();
